@@ -4,6 +4,55 @@
         <title>The Chicken Lab</title>
         <link rel="icon" href="images/favicon.png" type="image" sizes="32/32">
            <style>
+                a:hover{
+
+
+
+               color:red;
+             }
+
+              @font-face {
+                font-family: 'ducktext';
+                src:url(fonts/duck.woff) format('woff');
+              }
+             .linkbar{
+              
+               display:grid; 
+              
+
+               grid-template-rows:100px;
+               grid-template-columns:colspan=100 colspan=100 colspan=100 colspan=100;
+
+             }
+
+            .linkbar div{
+              margin-top:20px;
+               color:red;
+              font-size:50px;
+              font-family:ducktext;
+
+             }
+             .lb1{
+               text-align:center;
+               grid-row-start: 1;
+               grid-column-start: 1;
+             }
+             .lb2{
+              text-align:center;
+               grid-row-start: 1;
+               grid-column-start: 2;
+             }
+             .lb3{
+              text-align:center;
+               grid-row-start: 1;
+               grid-column-start: 3;
+             }
+             .lb4{
+              text-align:center;
+               grid-row-start: 1;
+               grid-column-start: 4;
+             }
+
             .sbar{
             
                 width:160px;
@@ -82,11 +131,19 @@
                  <img class=img2 src = "images/chickenicon.png" width="20px" height="15px">
     
             </div>
-            <a href="chickenBusiness.html" id="look1">The Chicken Lab desripction</a>
-            
-            <a href="chickenAnatomy.html" id="look2">Anatomy of chicken</a>
-            <br>
-            <a href="chickenCooking.html" id="look3">The Chicken Cooking</a>
+             <div class=linkbar>
+
+
+
+           <div class=lb1><a href="index.html">GALLERY</a></div> 
+
+           <div class=lb2><a href="index.html">HOMEPAGE</a></div> 
+
+           <div class=lb3><a href="index.html">STORE</a></div> 
+
+           <div class=lb4><a href="index.html">HELP</a></div> 
+     
+</div>
     
         </div>
         <div class="container-chicken">
