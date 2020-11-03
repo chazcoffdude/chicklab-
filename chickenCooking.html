@@ -2,11 +2,252 @@
 <html>
     <head>
         <title>TheChicken lab/Cooking</title>
+        <link rel="icon" href="Images/chickeniconlol.png" type="image" sizes="32/32">
         <style>
+             a:hover{
 
+
+
+color:red;
+}
+
+@font-face {
+ font-family: 'ducktext';
+ src:url(fonts/duck.woff) format('woff');
+}
+.linkbar{
+
+display:grid; 
+
+
+grid-template-rows:100px;
+grid-template-columns:colspan=100 colspan=100 colspan=100 colspan=100;
+
+}
+
+.linkbar div{
+margin-top:20px;
+color:red;
+font-size:50px;
+font-family:ducktext;
+
+}
+.lb1{
+text-align:center;
+grid-row-start: 1;
+grid-column-start: 1;
+}
+.lb2{
+text-align:center;
+grid-row-start: 1;
+grid-column-start: 2;
+}
+.lb3{
+text-align:center;
+grid-row-start: 1;
+grid-column-start: 3;
+}
+.lb4{
+text-align:center;
+grid-row-start: 1;
+grid-column-start: 4;
+}
+
+
+.gridimgchild{
+grid-row-start:1;
+grid-column-start:1;
+}
+.gridimgchild2{
+grid-row-start:1;
+grid-column-start:2;
+}
+.gridimgchild3{
+grid-row-start:2;
+grid-column-start:1;
+}
+.gridimgchild4{
+grid-row-start:2;
+grid-column-start:2;
+}
+.gridimgchild5{
+grid-row-start:3;
+grid-column-start:1;
+}
+.gridimgchild6{
+grid-row-start:3;
+grid-column-start:2;
+}
+.chicimg2{
+
+ margin-top:10px;
+ margin-bottom:10px;
+ margin-left:20px;
+ object-fit:cover;
+height:250px;
+width:250px;
+max-width:479px;
+padding: 8px 8px;
+float:left;
+}
+.chicimg3{
+ margin-top:10px;
+ margin-bottom:10px;
+ margin-right:20px;
+ object-fit:cover;
+ padding: 8px 8px;
+ float:right;
+height:250px;
+width:250px;
+max-width:479px;
+}
+
+
+.imgbox{
+
+ 
+ text-align:center;
+ display:block;
+
+}
+
+
+.imgboxhide{
+ text-align:center;
+}
+.chicimghide{
+
+ width:40%;
+ 
+ height:40%x;
+ text-align:center;
+ opacity:0;
+ transition: .8s ease;
+ 
+
+}
+
+.imgboxhide:hover .chicimghide{
+
+
+
+opacity:1;
+transition:.6;
+
+}
+
+
+.chicimg{
+
+
+
+width:40%;
+height:40%x;
+
+
+}
+
+.sbar{
+
+ width:160px;
+ height:16px;
+ margin-right:20px;
+ margin-top:16px;
+ float:right;
+ background-color:white;
+ border:blueviolet solid 2px;
+}
+.search{
+ text-align:center;
+ display:block;
+ flex-flow:column;
+ width:99%;
+ height:100px;
+ background-color:rgb(197, 131, 218);
+ border:blueviolet solid 6px;
+ border-radius:10%;           
+}
+.img2{
+  float:left;
+  
+
+}
+body{
+ background-color: #8e64a1;
+ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200' viewBox='0 0 160 80'%3E%3Cg fill='%23b082d2' %3E%3Cpolygon points='0 10 0 0 10 0'/%3E%3Cpolygon points='0 40 0 30 10 30'/%3E%3Cpolygon points='0 30 0 20 10 20'/%3E%3Cpolygon points='0 70 0 60 10 60'/%3E%3Cpolygon points='0 80 0 70 10 70'/%3E%3Cpolygon points='50 80 50 70 60 70'/%3E%3Cpolygon points='10 20 10 10 20 10'/%3E%3Cpolygon points='10 40 10 30 20 30'/%3E%3Cpolygon points='20 10 20 0 30 0'/%3E%3Cpolygon points='10 10 10 0 20 0'/%3E%3Cpolygon points='30 20 30 10 40 10'/%3E%3Cpolygon points='20 20 20 40 40 20'/%3E%3Cpolygon points='40 10 40 0 50 0'/%3E%3Cpolygon points='40 20 40 10 50 10'/%3E%3Cpolygon points='40 40 40 30 50 30'/%3E%3Cpolygon points='30 40 30 30 40 30'/%3E%3Cpolygon points='40 60 40 50 50 50'/%3E%3Cpolygon points='50 30 50 20 60 20'/%3E%3Cpolygon points='40 60 40 80 60 60'/%3E%3Cpolygon points='50 40 50 60 70 40'/%3E%3Cpolygon points='60 0 60 20 80 0'/%3E%3Cpolygon points='70 30 70 20 80 20'/%3E%3Cpolygon points='70 40 70 30 80 30'/%3E%3Cpolygon points='60 60 60 80 80 60'/%3E%3Cpolygon points='80 10 80 0 90 0'/%3E%3Cpolygon points='70 40 70 60 90 40'/%3E%3Cpolygon points='80 60 80 50 90 50'/%3E%3Cpolygon points='60 30 60 20 70 20'/%3E%3Cpolygon points='80 70 80 80 90 80 100 70'/%3E%3Cpolygon points='80 10 80 40 110 10'/%3E%3Cpolygon points='110 40 110 30 120 30'/%3E%3Cpolygon points='90 40 90 70 120 40'/%3E%3Cpolygon points='10 50 10 80 40 50'/%3E%3Cpolygon points='110 60 110 50 120 50'/%3E%3Cpolygon points='100 60 100 80 120 60'/%3E%3Cpolygon points='110 0 110 20 130 0'/%3E%3Cpolygon points='120 30 120 20 130 20'/%3E%3Cpolygon points='130 10 130 0 140 0'/%3E%3Cpolygon points='130 30 130 20 140 20'/%3E%3Cpolygon points='120 40 120 30 130 30'/%3E%3Cpolygon points='130 50 130 40 140 40'/%3E%3Cpolygon points='120 50 120 70 140 50'/%3E%3Cpolygon points='110 70 110 80 130 80 140 70'/%3E%3Cpolygon points='140 10 140 0 150 0'/%3E%3Cpolygon points='140 20 140 10 150 10'/%3E%3Cpolygon points='140 40 140 30 150 30'/%3E%3Cpolygon points='140 50 140 40 150 40'/%3E%3Cpolygon points='140 70 140 60 150 60'/%3E%3Cpolygon points='150 20 150 40 160 30 160 20'/%3E%3Cpolygon points='150 60 150 50 160 50'/%3E%3Cpolygon points='140 70 140 80 150 80 160 70'/%3E%3C/g%3E%3C/svg%3E");
+}
+.img1{
+ display: block;
+ margin-right: auto;
+ margin-left: auto;
+}
+.container-chicken{
+ background-color: lavender;
+ padding: 10px 10px;
+ margin: 10px;
+ margin-left: 150px;
+ margin-right: 150px;
+ float: center;
+ height: 1700px;
+}
+var{
+ text-decoration: underline;
+ color: red;
+}
+code{
+ text-decoration: overline;
+ color: #8e64a1;           
+}
         </style>
     </head>
     <body>
+        <div class=search>
+       
+            <div class=sbar>
+                 <img class=img2 src = "images/mag.png" width="20px" height="15px">
+    
+            </div>
+    
+            <div class=linkbar>
+    
+    
+    
+               <div class=lb1><a href="chickenGallery.html">GALLERY</a></div> 
+    
+               <div class=lb2><a href="chickenBusiness.html">HOMEPAGE</a></div> 
+    
+               <div class=lb3><a href="chickenCooking.html">STORE</a></div> 
+    
+               <div class=lb4><a href="chickenAnatomy.html">HELP</a></div> 
+         
+            </div>
+    
+    
+        </div>
         
+        <div>
+            <div class="container-chicken">
+                <img class="img1"src="images/chickenCook1.png" width="410px" height="300px">
+                <h2>Chicken Piccata</h2>
+                    The chicken piccata is one of t a meal that can have a chicken be used. 
+                    It's usaully veal or chicken use of meat, that is sliced up, and dredged in flour, browned. Then served in a sauce containing lemon juice, butter, and capers. It was originally in Italy
+                    The chicken piccata have 6 srves and it can be for long as 30 min. The prep time for is about 10 min and total of calories if having the exact ingredients, 435. The ingredients are 2lbs, 2 1/2 
+                    of salt(divided), 1/2 tsp of pepper, 1 cup flour fordredging, 10 tbsp butter, cut pieces(divided), 4 tbsp olive oil(divided), 1 shallot, minced, 1tbsp garlic stock, 1 lemon juiced (1 tbsp), 2 tsp lemon zest, 2 tbsp capers(drained),
+                    or can used parsley(chopped) for garnish(optional).
+                <img class="img1" src="images/chickenCook1.jpg" width="410px" height="300px">
+                <h2>Chicken Empanadas</h2>
+                    The chicken Empandanadas can have 10 srves within a 30 min prep time before cooking. There is a total of 35 min of cooking time. There can be a total of 224 calories if having exact ingredients. 
+                    The recipes are; 2 tbsp olive oil, 1/2 cup onion(minced), 1 red bell pepper(minced), 1 yellow or orange bell pepper(minced), 4 garlic cloves(minced), 2 tbsp cilantro(finely minced), 2 cups shredded chicken breat (1.5 lbs raw), 2 tsp chicken bouillon,
+                     1 cup water, 1 tbsp tomato paste, 1 tsp onion powder, 1 tsp garlic powder, 1/2 tsp salt, 1 egg (for egg wash) and 10 goya Empanadas dough shells( you can use store-bought pie crust).
+                    <p>
+                        <ul>1. Preheat oven to 375° F.</ul>
+                        <ul>2. In a large skillet heat 2 tablespoons of olive oil over medium heat. Add onions and peppers and sauté until softened, about 5 minutes. Add garlic and cilantro and stir until fragrant, about one minute.</ul>
+                        <ul>3. Add chicken, along with water, chicken bouillon, tomato paste, onion powder, garlic powder and salt. Bring liquid to a simmer, stirring often. Allow to cook until liquid has evaporated, but mixture is not dry, about 5-8 minutes.</ul>
+                        <ul>4. Working with one prepared dough at a time add a heaping ⅓ cup of filling onto one side of the dough. If using homemade dough or pie crust, roll dough out very thin and cut into 6-7” disks.</ul>
+                        <ul>5. Wet a pastry brush with egg wash (1 beaten egg plus 1 tablespoon water) and dampen the inside ¼ inch edge of the filled dough. Fold the dough in half. Using a fork, firmly press the edges together. Repeat this process with remaining dough and filling and arrange on a parchment lined baking sheet.</ul>
+                        <ul>6. Brush each empanada with egg wash. Bake for 35 min or until golden brown.</ul>
+                    </p> 
+                </div>
+        </div>
     </body>
 </html>
